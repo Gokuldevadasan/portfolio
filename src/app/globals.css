@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background-color: #050505;
+    color: #FFFFFF;
+    font-family: var(--font-space-grotesk), system-ui, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background: rgba(255, 0, 0, 0.3);
+    color: #FFFFFF;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #C70000;
+    border-radius: 0;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #FF0000;
+  }
+
+  input, textarea, button {
+    font-family: inherit;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    background: rgba(17, 17, 17, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(199, 0, 0, 0.15);
+  }
+
+  .glass-panel:hover {
+    border-color: rgba(199, 0, 0, 0.3);
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.08);
+  }
+
+  .red-border {
+    border: 1px solid rgba(199, 0, 0, 0.2);
+  }
+
+  .red-border-hover:hover {
+    border-color: rgba(199, 0, 0, 0.5);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.15), inset 0 0 20px rgba(255, 0, 0, 0.05);
+  }
+
+  .text-gradient-red {
+    background: linear-gradient(135deg, #FF0000, #FF3B3B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .red-glow {
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.15), 0 0 40px rgba(255, 0, 0, 0.05);
+  }
+
+  .red-glow-lg {
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.25), 0 0 80px rgba(255, 0, 0, 0.1), 0 0 150px rgba(255, 0, 0, 0.05);
+  }
+
+  .section-padding {
+    padding: 6rem 1.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .section-padding {
+      padding: 8rem 2rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-padding {
+      padding: 10rem 4rem;
+    }
+  }
+
+  .max-width-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .laser-line {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #FF0000, transparent);
+    opacity: 0.3;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
