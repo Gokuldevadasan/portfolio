@@ -28,7 +28,7 @@ export const personal = {
   email: 'gokuldevadasan154@gmail.com',
   phone: '+91 9400039456',
 
-  linkedin: 'www.linkedin.com/in/gokul-devadasan-7134a2328',
+  linkedin: 'https://www.linkedin.com/in/gokul-devadasan-7134a2328',
   github: 'https://github.com/Gokuldevadasan',
 
   education: {
@@ -39,7 +39,7 @@ export const personal = {
     cgpa: '8.38',
   },
 
-  resumeUrl: '/resume.pdf',
+  resumeUrl: 'https://drive.google.com/file/d/14uILGEnCv6Jksi552qDLGM424WO9U62a/view?usp=sharing',
 
   about: {
     story:
