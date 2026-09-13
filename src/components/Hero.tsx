@@ -318,20 +318,6 @@ export default function Hero() {
                         'linear-gradient(135deg, rgba(255,0,0,0.08), transparent 45%, rgba(0,0,0,0.35))',
                     }}
                   />
-
-                  {/* GD WATERMARK */}
-                  <div
-                    className="absolute inset-0 flex items-center justify-center text-6xl font-bold tracking-[0.2em]"
-                    style={{
-                      color: 'rgba(255, 0, 0, 0.08)',
-                      textShadow:
-                        '0 0 30px rgba(255,0,0,0.15)',
-                    }}
-                  >
-                    GD
-                  </div>
-                </div>
-
                 {/* TOP LASER LINE */}
                 <div
                   className="absolute top-0 left-0 right-0 h-[1px]"
