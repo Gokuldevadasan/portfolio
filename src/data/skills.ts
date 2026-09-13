@@ -42,8 +42,7 @@ export const skillCategories: SkillCategory[] = [
       { name: 'C++', icon: SiCplusplus, level: 90, color: '#FF1A1A' },
       { name: 'Python', icon: SiPython, level: 88, color: '#FF3333' },
       { name: 'Dart', icon: SiFlutter, level: 90, color: '#FF4D4D' },
-      { name: 'Java', icon: FaCode, level: 75, color: '#FF6666' },
-      { name: 'JavaScript', icon: SiTypescript, level: 80, color: '#FF8080' },
+      { name: 'Java', icon: FaCode, level: 75, color: '#FF6666' }
     ],
   },
 
@@ -75,7 +74,7 @@ export const skillCategories: SkillCategory[] = [
     title: 'IoT & Cloud',
     skills: [
       { name: 'Firebase', icon: SiFirebase, level: 95, color: '#FF0000' },
-      { name: 'MQTT', icon: SiMqtt, level: 85, color: '#FF1A1A' },
+      { name: 'MQTT', icon: SiMqtt, level: 60, color: '#FF1A1A' },
       { name: 'REST API', icon: FaCode, level: 90, color: '#FF3333' },
       { name: 'Flask', icon: SiPython, level: 85, color: '#FF4D4D' },
       { name: 'JSON', icon: FaCode, level: 95, color: '#FF6666' },
@@ -87,9 +86,9 @@ export const skillCategories: SkillCategory[] = [
     skills: [
       { name: 'OpenCV', icon: SiOpencv, level: 90, color: '#FF0000' },
       { name: 'TensorFlow', icon: SiTensorflow, level: 75, color: '#FF1A1A' },
-      { name: 'YOLO', icon: SiTensorflow, level: 75, color: '#FF3333' },
+      { name: 'YOLO', icon: SiTensorflow, level: 50, color: '#FF3333' },
       { name: 'OpenRouter API', icon: FaCode, level: 90, color: '#FF4D4D' },
-      { name: 'Computer Vision', icon: SiOpencv, level: 90, color: '#FF6666' },
+      { name: 'Computer Vision', icon: SiOpencv, level: 50, color: '#FF6666' },
       { name: 'LLM Integration', icon: FaCode, level: 88, color: '#FF8080' },
     ],
   },
@@ -98,8 +97,7 @@ export const skillCategories: SkillCategory[] = [
     title: 'Mobile Development',
     skills: [
       { name: 'Flutter', icon: SiFlutter, level: 92, color: '#FF0000' },
-      { name: 'Android Studio', icon: SiFlutter, level: 85, color: '#FF1A1A' },
-      { name: 'Shared Preferences', icon: SiFlutter, level: 90, color: '#FF3333' },
+      { name: 'Android Studio', icon: SiFlutter, level: 85, color: '#FF1A1A' }
     ],
   },
 
@@ -110,7 +108,7 @@ export const skillCategories: SkillCategory[] = [
       { name: 'Sensor Interfacing', icon: SiArduino, level: 95, color: '#FF1A1A' },
       { name: 'Circuit Debugging', icon: SiC, level: 90, color: '#FF3333' },
       { name: 'Control Panel Wiring', icon: FaCode, level: 80, color: '#FF4D4D' },
-      { name: 'Marine Electronics', icon: FaCode, level: 75, color: '#FF6666' },
+      { name: 'Marine Electronics', icon: FaCode, level: 60, color: '#FF6666' },
     ],
   },
 
@@ -121,8 +119,8 @@ export const skillCategories: SkillCategory[] = [
       { name: 'VS Code', icon: FaCode, level: 98, color: '#FF1A1A' },
       { name: 'Git', icon: SiGit, level: 90, color: '#FF3333' },
       { name: 'GitHub', icon: SiGit, level: 90, color: '#FF4D4D' },
-      { name: 'Postman', icon: SiPostman, level: 85, color: '#FF6666' },
-      { name: 'Figma', icon: SiFigma, level: 80, color: '#FF8080' },
+      { name: 'Postman', icon: SiPostman, level: 50, color: '#FF6666' },
+      { name: 'Figma', icon: SiFigma, level: 40, color: '#FF8080' },
     ],
   },
 
@@ -130,8 +128,8 @@ export const skillCategories: SkillCategory[] = [
     title: 'Operating Systems',
     skills: [
       { name: 'Windows', icon: FaCode, level: 98, color: '#FF0000' },
-      { name: 'Linux', icon: SiLinux, level: 85, color: '#FF1A1A' },
-      { name: 'Ubuntu', icon: SiLinux, level: 82, color: '#FF3333' },
+      { name: 'Linux', icon: SiLinux, level: 51, color: '#FF1A1A' },
+      { name: 'Ubuntu', icon: SiLinux, level: 52, color: '#FF3333' },
     ],
   },
 ]
