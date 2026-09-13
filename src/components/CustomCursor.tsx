@@ -7,8 +7,10 @@ export default function CustomCursor() {
   const { x, y } = useMousePosition()
   const [isVisible, setIsVisible] = useState(false)
   const [isHovering, setIsHovering] = useState(false)
+  const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
+    setMounted(true)
     setIsVisible(true)
 
     const handleMouseEnter = () => setIsHovering(true)
@@ -31,7 +33,7 @@ export default function CustomCursor() {
     }
   }, [])
 
-  if (typeof window === 'undefined') return null
+  if (!mounted) return null
 
   return (
     <>
@@ -46,10 +48,12 @@ export default function CustomCursor() {
           borderRadius: 0,
           opacity: isVisible ? 1 : 0,
           transform: isHovering ? 'scale(2.5)' : 'scale(1)',
-          boxShadow: '0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.4)',
+          boxShadow:
+            '0 0 10px rgba(255, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 0.4)',
           transition: 'transform 0.15s ease-out',
         }}
       />
+
       <div
         className="fixed pointer-events-none z-[9998] transition-opacity duration-300"
         style={{
