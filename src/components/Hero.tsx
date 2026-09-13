@@ -87,7 +87,9 @@ export default function Hero() {
   }, [])
 
   const scrollToProjects = () => {
-    document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })
+    document.querySelector('#projects')?.scrollIntoView({
+      behavior: 'smooth',
+    })
   }
 
   return (
@@ -96,11 +98,13 @@ export default function Hero() {
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       style={{ backgroundColor: '#050505' }}
     >
+      {/* PARTICLE BACKGROUND */}
       <canvas
         ref={canvasRef}
         className="absolute inset-0 pointer-events-none"
       />
 
+      {/* GRID */}
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
@@ -114,6 +118,7 @@ export default function Hero() {
         }}
       />
 
+      {/* RED GLOW */}
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] pointer-events-none"
         style={{
@@ -127,6 +132,8 @@ export default function Hero() {
 
           {/* LEFT SIDE */}
           <div className="order-2 lg:order-1">
+
+            {/* TITLE TAG */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -149,6 +156,7 @@ export default function Hero() {
               </div>
             </motion.div>
 
+            {/* MAIN HEADING */}
             <motion.h1
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -177,6 +185,7 @@ export default function Hero() {
               </span>
             </motion.h1>
 
+            {/* TYPING ANIMATION */}
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -200,6 +209,7 @@ export default function Hero() {
               />
             </motion.div>
 
+            {/* DESCRIPTION */}
             <motion.p
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
@@ -318,6 +328,8 @@ export default function Hero() {
                         'linear-gradient(135deg, rgba(255,0,0,0.08), transparent 45%, rgba(0,0,0,0.35))',
                     }}
                   />
+                </div>
+
                 {/* TOP LASER LINE */}
                 <div
                   className="absolute top-0 left-0 right-0 h-[1px]"
