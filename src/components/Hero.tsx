@@ -239,7 +239,7 @@ export default function Hero() {
             >
               {/* RESUME */}
               <a
-                href="/resume1.pdf"
+                href="/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-3 px-8 py-4 border border-[#FF0000] bg-[#FF0000] text-[#050505] font-semibold text-sm hover:bg-transparent hover:text-[#FF0000] transition-all duration-300"
