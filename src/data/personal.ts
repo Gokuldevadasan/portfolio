@@ -39,7 +39,7 @@ export const personal = {
     cgpa: '8.38',
   },
 
-  resumeUrl: 'https://drive.google.com/file/d/14uILGEnCv6Jksi552qDLGM424WO9U62a/view?usp=sharing',
+  resumeUrl: 'https://drive.google.com/file/d/1qHqc5DrHkwhrWyffiHMRlk-Y--h6FmRX/view?usp=sharing',
 
   about: {
     story:
